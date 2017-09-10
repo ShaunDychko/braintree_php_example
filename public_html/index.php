@@ -60,10 +60,10 @@
                 console.log('Error', err);
                 return;
               }
-
+              console.log("Payment nonce", payload.nonce);
               // Add the nonce to the form and submit
               document.querySelector('#nonce').value = payload.nonce;
-              form.submit();
+              // form.submit();
             });
           });
         });
